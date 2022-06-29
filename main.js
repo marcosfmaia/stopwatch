@@ -4,7 +4,7 @@ let reset = document.querySelector("#reset");
 let minute = 0;
 let seconds = 0;
 let miliSeconds = 0; 
-let time = 1 // Alterar para 1000 mile segundos para os segundos certo
+let time = 1000
 let interval;
 
 
@@ -40,7 +40,7 @@ let interval;
         document.querySelector("#counter").innerText = format;
 
 
-        if(minute == 1) {
+        if(minute == 10) {
             clearInterval(interval)
             minute = 0;
             seconds = 0;
