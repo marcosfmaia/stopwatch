@@ -6,7 +6,7 @@ let finish = document.querySelector("#finish")
 
 let counter = document.querySelector("#counter")
 
-let time = 1
+let time = 1000
 let miliSeconds = 0
 let seconds = 0
 let minute = 0
@@ -45,7 +45,7 @@ let interval;
         let format = (minute < 10 ? '0' + minute : minute) + ':' + (seconds <10 ? '0' + seconds : seconds) + ':' + (miliSeconds < 10 ? '0' + miliSeconds : miliSeconds);
         document.querySelector("#counter").innerText = format;
 
-        if(minute == finish.value) {
+        if(seconds == finish.value) {
             clearInterval(interval)
             minute = 0;
             seconds = 0;
