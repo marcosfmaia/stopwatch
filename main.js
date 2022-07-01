@@ -6,7 +6,7 @@ let audio = document.querySelector('#sound')
 
 let counter = document.querySelector("#counter")
 
-let time = 1
+let time = 1000
 let miliSeconds = 0
 let seconds = 0
 let minute = 0
