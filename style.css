@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +40,23 @@
     padding-top: 100px;
 }
 
+.group__content {
+    border: none;
+    margin-bottom: 40px;
+}
+
+.description {
+    margin-right: 20px;
+}
+
+.form__entry-value {
+    all: unset;
+    width: 80px;
+    background-color: #e9405fe1;
+    border-radius: 5px;
+    padding: 10px 3px;
+}
+
 .button {
     all: unset;
     width: 80px;
@@ -48,4 +67,3 @@
     margin-right: 20px;
     cursor: pointer;
 }
-

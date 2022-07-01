@@ -13,9 +13,17 @@
 
         <main class="main">
             <h3 class="subtitle" id="counter">00:00:00</h3>
+            <audio id="sound" src="Ring09.wav"></audio>
+
+            <form action="" class="form-group">
+                <fieldset class="group__content">
+                    <label for="finish" class="description">Digite em quanto tempo deseja terminar</label>
+                    <input type="number" name="finish" id="finish" min="0" class="form__entry-value">
+                </fieldset>
+            </form>
 
             <button class="button" id="start">Iniciar</button>
-            <button class="button" id="reset">Reseta</button>
+            <button class="button" id="reset">Resetar</button>
         </main>
     </div>
 
