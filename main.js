@@ -17,6 +17,15 @@ let interval;
         watch();
        }, time);
 
+
+       if(finish.value <= 0) {
+        alert("impossivel cronometra informe um valor para ser terminado")
+        minute = 0;
+        seconds = 0;
+        miliSeconds = 0;
+        audio.pause()
+    }
+
      
     })
 
@@ -52,11 +61,5 @@ let interval;
             audio.play()
         }
 
-        if(finish.value <= 0) {
-            alert("impossivel cronometra informe um valor para ser terminado")
-            minute = 0;
-            seconds = 0;
-            miliSeconds = 0;
-            audio.pause()
-        }
+      
     }
