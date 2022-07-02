@@ -53,11 +53,12 @@ let interval;
         let format = (minute < 10 ? '0' + minute : minute) + ':' + (seconds <10 ? '0' + seconds : seconds) + ':' + (miliSeconds < 10 ? '0' + miliSeconds : miliSeconds);
         document.querySelector("#counter").innerText = format;
 
-        if(minute == finish.value) {
+        if(seconds == finish.value) {
             clearInterval(interval)
             minute = 0;
             seconds = 0;
             miliSeconds = 0;
+            document.querySelector("#counter").innerText = 'Fim do cronômetro';
             audio.play()
         }
 
